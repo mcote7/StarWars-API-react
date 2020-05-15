@@ -11,13 +11,28 @@
 .linkswrapper {
   float: left;
 }
-.mylinks {
+.navlinks {
   color: #ffee58;
   border-bottom: solid;
+  margin-right: 20px;
 }
-.mylinks:hover {
+.navlinks:hover {
   color: skyblue;
   text-decoration: none;
+}
+/* -------------------------------------------------------------------------- */
+.bodylinks {
+  color: skyblue;
+  border-bottom: solid;
+  margin-right: 20px;
+}
+.bodylinks:hover {
+  color: #ffee58;
+  text-decoration: none;
+}
+/* -------------------------------------------------------------------------- */
+.errorlink {
+  float: right;
 }
 /* --------------------------------------title--header----------------------- */
 @font-face {
@@ -147,9 +162,9 @@ tr:nth-child(odd) {
 .footnote:hover {
   color: #ffee58;
 }
-.footer {
+/* .footer {
 
-}
+} */
 /* -------------------------------------error--message---------------------- */
 .errorwrapper {
   display: flex;
