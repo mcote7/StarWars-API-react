@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  background-image: url("./stars.gif");
+  background-color: #1E1E22;
+  color: lightskyblue;
+  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

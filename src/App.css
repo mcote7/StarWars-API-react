@@ -1,38 +1,155 @@
 .App {
   text-align: center;
+  margin: 10px;
+  padding: 10px;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+      justify-content: center;
+    }
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Star Jedi Outline';
+  src: url('StarJediOutline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titlewrapper {
+  margin: 32px 36px 84px 0px;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  color: #ffee58;
+  font-family: 'Star Jedi Outline';
+  font-style: italic;
+  letter-spacing: -4px;
+  display: inline-block;
+  font-size: 136px;
+  line-height: 48px;
+}
+.subtitleWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 48px;
+}
+.subtitle {
+  color: cornsilk;
+  letter-spacing: 14px;
+  border-bottom: solid 1.5px;
+  text-decoration: overline;
+  width: max-content;
+}
+/* ------------------------------------------------------------------------- */
+.myselect {
+  background-color: #dddddd;
+}
+.myselect:hover {
+  background-color: lightskyblue;
+}
+.myselect:focus {
+  outline: none;
+  color: lightskyblue;
+  border-color: black;
+  background-color: black;
+}
+/* -------------------------------------------------------------------------- */
+.placeholder {
+  font-size: small;
+  color: rgb(155, 155, 155);
+  display: inline-flex;
+}
+/* ------------------------------------------------------------------------- */
+.idinput {
+  width: 2em;
+  border-radius: 16px;
+  text-align: center;
+  background-color: #dddddd;
+}
+.idinput:hover {
+  background-color: lightskyblue;
+}
+.idinput:focus {
+  outline: none;
+  color: lightskyblue;
+  background-color: black;
+}
+.idinput:active {
+  outline: none;
+  color: lightskyblue;
+  background-color: black;
+}
+/* ------------------------------------------------------------------------- */
+.btn-cote {
+  background-color: lightskyblue;
+  color: black;
+  border: solid 2px rgb(155, 155, 155);
+}
+.btn-cote:hover {
+  background-color: black;
+  color: lightskyblue;
+}
+/* -------------------------------------------------------------------------- */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 50%;
+  margin: 50px;
+  text-align: center;
+}
+thead {
+  background-color: black;
+  color: lightskyblue;
+}
+td {
+  border: 1px solid black;
+  color: black;
+  padding: 8px;
+}
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: rgb(145, 145, 145);
+}
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+/* ------------------------------------------------------------------------- */
+.myname {
+  text-decoration: overline;
+  color: cornsilk;
+  font-size: small;
+  letter-spacing: 10px;
+}
+.footnote {
+  color: lightskyblue;
+  font-family: 'Star Jedi Outline';
+  font-size: small;
+  font-weight: lighter;
+  letter-spacing: 10px;
+  margin-bottom: 6px;
+}
+.footnote:hover {
+  color: #ffee58;
+}
+/* ------------------------------------------------------------------------- */
+.errorwrapper {
+  display: flex;
+  background-image: url('./Emperor.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: -45px 10px -136px 10px;
+}
+.errormess {
+  font-family: 'Star Jedi Outline';
+  font-style: italic;
+  color: red;
+}
+.messwrapper {
+  margin-left: 380px;
+  margin-top: 320px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
