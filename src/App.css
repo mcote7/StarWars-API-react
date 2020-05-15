@@ -7,7 +7,19 @@
 .row {
       justify-content: center;
     }
-/* -------------------------------------------------------------------------- */
+/* -------------------------------------links-------------------------------- */
+.linkswrapper {
+  float: left;
+}
+.mylinks {
+  color: #ffee58;
+  border-bottom: solid;
+}
+.mylinks:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+/* --------------------------------------title--header----------------------- */
 @font-face {
   font-family: 'Star Jedi Outline';
   src: url('StarJediOutline.ttf') format('truetype');
@@ -22,12 +34,12 @@
   color: #ffee58;
   font-family: 'Star Jedi Outline';
   font-style: italic;
-  letter-spacing: -4px;
+  letter-spacing: -5px;
   display: inline-block;
   font-size: 136px;
   line-height: 48px;
 }
-.subtitleWrapper {
+.subtitlewrapper {
   display: flex;
   justify-content: center;
   margin-left: 48px;
@@ -39,7 +51,7 @@
   text-decoration: overline;
   width: max-content;
 }
-/* ------------------------------------------------------------------------- */
+/* ------------------------------------dropdown--select--------------------- */
 .myselect {
   background-color: #dddddd;
 }
@@ -58,7 +70,7 @@
   color: rgb(155, 155, 155);
   display: inline-flex;
 }
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------form--inputs----------------------------- */
 .idinput {
   width: 2em;
   border-radius: 16px;
@@ -78,7 +90,7 @@
   color: lightskyblue;
   background-color: black;
 }
-/* ------------------------------------------------------------------------- */
+/* -------------------------------------my--button-------------------------- */
 .btn-cote {
   background-color: lightskyblue;
   color: black;
@@ -88,7 +100,7 @@
   background-color: black;
   color: lightskyblue;
 }
-/* -------------------------------------------------------------------------- */
+/* ---------------------------------------table------------------------------ */
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -117,7 +129,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #dddddd;
 }
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------------------footer---------------------- */
 .myname {
   text-decoration: overline;
   color: cornsilk;
@@ -135,13 +147,16 @@ tr:nth-child(odd) {
 .footnote:hover {
   color: #ffee58;
 }
-/* ------------------------------------------------------------------------- */
+.footer {
+
+}
+/* -------------------------------------error--message---------------------- */
 .errorwrapper {
   display: flex;
   background-image: url('./Emperor.png');
   background-repeat: no-repeat;
   height: 100vh;
-  margin: -45px 10px -136px 10px;
+  margin: -245px 10px -136px 10px;
 }
 .errormess {
   font-family: 'Star Jedi Outline';
@@ -152,4 +167,5 @@ tr:nth-child(odd) {
   margin-left: 380px;
   margin-top: 320px;
 }
+/* -------------------------------------------------------------------------- */
 

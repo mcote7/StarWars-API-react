@@ -13,7 +13,7 @@ const SearchDisplay = ({errorMessage, searchResult, option}) => {
             </div>
         );
     }
-    else {
+    else if(!errorMessage) {
 
     if(option === "people"){
         return(

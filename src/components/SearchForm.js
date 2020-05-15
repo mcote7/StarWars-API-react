@@ -21,6 +21,7 @@ const SearchForm = ({searchResult, setSearchResult, errorMessage, setErrorMessag
             navigate('/'+option+'/'+id)
             setOption("");
             setId("");
+            setErrorMessage("");
         };
 
 
