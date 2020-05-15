@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '@reach/router';
 
 
 const SearchDisplay = ({errorMessage, searchResult, option}) => {
@@ -9,6 +10,7 @@ const SearchDisplay = ({errorMessage, searchResult, option}) => {
                 <div className="messwrapper">
                     <h1 className="errormess">fool! the item you searched for</h1>
                     <h1 className="errormess">is not in this database . . .</h1>
+                    <Link to="/search" className="bodylinks errorlink">Back</Link>
                 </div>
             </div>
         );
@@ -17,6 +19,8 @@ const SearchDisplay = ({errorMessage, searchResult, option}) => {
 
     if(option === "people"){
         return(
+            <>
+            <p>your search results . . .</p>
                 <div className="row">
                     <table>
                         <thead>
@@ -39,10 +43,14 @@ const SearchDisplay = ({errorMessage, searchResult, option}) => {
                         </tbody>
                     </table>
                 </div>
+                <Link to="/search" className="bodylinks">Back</Link>
+            </>
         );
     }
     if(option === "planets"){
         return(
+            <>
+            <p>your search results . . .</p>
                 <div className="row">
                     <table>
                         <thead>
@@ -65,6 +73,8 @@ const SearchDisplay = ({errorMessage, searchResult, option}) => {
                         </tbody>
                     </table>
                 </div>
+                <Link to="/search" className="bodylinks">Back</Link>
+            </>
             );
         }
     }

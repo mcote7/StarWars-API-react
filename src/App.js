@@ -13,7 +13,8 @@ function App() {
     <div className="App">
 
       <div className="linkswrapper">
-        <Link to="/" className="mylinks">Home</Link>
+        <Link to="/" className="navlinks">Home</Link>
+        <Link to="search" className="navlinks">Search</Link>
       </div>
 
         <div className="titlewrapper">
@@ -25,7 +26,7 @@ function App() {
         </div>
 
       <Router>
-        <SearchForm path="/" searchResult={searchResult} setSearchResult={setSearchResult} errorMessage={errorMessage} setErrorMessage={setErrorMessage}/>
+        <SearchForm path="search" searchResult={searchResult} setSearchResult={setSearchResult} errorMessage={errorMessage} setErrorMessage={setErrorMessage}/>
         <SearchDisplay path="/:option/:id" searchResult={searchResult} errorMessage={errorMessage}/>
       </Router>
 
