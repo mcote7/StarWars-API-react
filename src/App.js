@@ -5,8 +5,9 @@ import SearchForm from './components/SearchForm';
 import SearchDisplay from './components/SearchDisplay';
 
 function App() {
-  const [searchResult, setSearchResult] = useState({});
+  const [searchResult, setSearchResult] = useState("loading . . .");
   const [errorMessage, setErrorMessage] = useState("");
+  // const [loaded, setLoaded] = useState(false);                     //add to rest so wont show table on load?
 
   return (
 
