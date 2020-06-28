@@ -37,6 +37,7 @@ const SearchForm = ({searchResult, setSearchResult, errorMessage, setErrorMessag
                 </select>&nbsp;&nbsp;&nbsp;&nbsp;
 
                 <label>ID# &bull;&nbsp; </label>
+                {/* Try input type number ? */}
                 <input required onChange={onChangeId} type="text" pattern="\d+" maxLength="3" name="id" value={id} className="idinput"/>
                 &nbsp;&nbsp;<p className="placeholder">(must be valid i.d.)</p>
                 <br/><br/>
